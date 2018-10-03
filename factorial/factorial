@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int fatorial (int fator) {
+	int i;
+	int aux = fator;
+	for (i = fator-1 ; i >= 1; i--) {
+		aux *= i;
+	}
+	return aux;
+}
+
+
+int main () {
+	int fator;
+	fator = fatorial(3);
+	printf("%d\n", fatorial(5));
+	return 0;
+}
